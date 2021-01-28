@@ -1,0 +1,67 @@
+/* UTILITIES */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.m-center{
+  margin: 0 auto;
+}
+.ml-30{
+  margin-left: 30px;
+}
+.t-center {
+  text-align: center;
+}
+.pointer{
+  cursor: pointer;
+}
+.f-size{
+  font-size: 22px;
+}
+.no-border{
+  border: none;
+}
+.b-radius{
+  border-radius: 15px;
+}
+/* ELEMENTS */
+#root{
+  width: 900px;
+  height: 100vh;
+  font-family: Roboto;
+  background: #eee;
+}
+h1{
+  padding:  20px 0;
+}
+.text{
+  margin: 10px 60px 20px 20px;
+  width: 300px;
+  height: 30px;
+  background: #ccc;
+  color: #f00;
+  padding-left: 10px;
+}
+.submit{
+  width: 100px;
+  height: 30px;
+  background: #0167ff;
+  color: #fff;
+}
+.list-container{
+  width: 500px;
+  min-height: 30px;
+  background: #fff;
+}
+ul{
+  list-style: none;
+}
+li{
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 20px;
+  padding-bottom: 5px;
+  color: #00f;
+  border-bottom: 1px solid #aaa;
+}
