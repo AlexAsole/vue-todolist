@@ -11,13 +11,13 @@
   <title>To Do List</title>
 </head>
 <body>
-  <div id="root" class="m-center t-center">
+  <div id="root" class="m-center">
     <h1>To Do List<i class="fa fa-thumb-tack ml-30" aria-hidden="true"></i></h1>
-    <input placeholder="Scrivi qualcosa" class="text f-size no-border b-radius" type="text" @keyup.enter="insideArray" v-model="inputData">
+    <input @keyup.enter="insideArray" v-model="inputData" placeholder="Scrivi qualcosa" class="text f-size no-border b-radius" type="text">
     <input class="submit pointer f-size no-border b-radius" type="submit" name="" value="Submit" @click='insideArray'>
-    <div class="list-container m-center t-center b-radius">
+    <div class="list-container m-center b-radius">
       <ul>
-        <li v-for="(element, index) in dataArray" class="f-size">
+        <li v-for="(element, index) in dataArray" class="f-size flex">
           {{element}}
           <i class="fa fa-times ml-30 pointer" @click="removeElement(index)" aria-hidden="true"></i>
         </li>
